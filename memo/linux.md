@@ -3,7 +3,8 @@
 
 权限
 >setfacl -R -m u:jenkins:rwx /opt  
->chmod jenkins 777 /opt
+>chmod jenkins 777 /opt  
+>chown -R 101:101 behat/
 
 查看当前文件夹大小
 >du -sh
