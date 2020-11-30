@@ -25,3 +25,13 @@ is_upper_case('ABC') # True
 is_upper_case('a3@$') # False
 is_upper_case('aB4') # False
 ```
+
+### capitalize_every_word
+Capitalizes the first letter of every word in a string.
+
+Uses str.title to capitalize the first letter of every word in the string.
+
+```python
+def capitalize_every_word(string):
+    return string.title()
+```
