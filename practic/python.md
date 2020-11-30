@@ -19,3 +19,9 @@ Convert the given string to upper case, using str.upper() method and compare it 
 def is_upper_case(string):
     return string == string.upper()
 ```
+
+```python
+is_upper_case('ABC') # True
+is_upper_case('a3@$') # False
+is_upper_case('aB4') # False
+```
