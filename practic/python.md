@@ -35,3 +35,7 @@ Uses str.title to capitalize the first letter of every word in the string.
 def capitalize_every_word(string):
     return string.title()
 ```
+
+```python
+capitalize_every_word('hello world!') # 'Hello World!'
+```

@@ -53,3 +53,9 @@ Echo 'X-FORWARDED-FOR:58.'$i'.44.69';
 Curl 'http://www.dramastar.org/tp/pnum.php' -H 'X-FORWARDED-FOR:58.'$i'.44.69' --data 'id=1899';
 done
 ```
+
+两条命令放在一行执行，第一条命令成功再执行第二条  
+>cd /xx/xx&&svn update  
+
+两条命令放在一行执行，第一条命令失败再执行第二条  
+>cd /yy/yy||git pull  
