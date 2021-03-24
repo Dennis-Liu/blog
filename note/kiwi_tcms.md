@@ -542,6 +542,8 @@ def create(data):
     del data['text']
     bug = Bug.objects.create(**data)
     add_comment([bug], text, bug.reporter)
+
+    return bug
 ```
 add `create` in `__all__` like below
 ```python
@@ -592,4 +594,4 @@ install python3-devel
 
 ## refer site
 [kiwitcms](https://kiwitcms.readthedocs.io/en/latest/)
-[kiwiapi](https://tcms-api.readthedocs.io/en/latest)
+[kiwiapi](https://kiwitcms.readthedocs.io/en/latest/modules/tcms.rpc.api.html)
