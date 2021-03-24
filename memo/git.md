@@ -21,7 +21,7 @@ Git就会创建一个裸仓库，裸仓库没有工作区，因为服务器上�
 ## github  
 
 #### Hosts  
-DNS污染经常导致github访问缓慢，可以通过配置hosts指定ip来提速。可以在http://blog.yoqi.me/lyq/16489.html获取最新的hosts列表  
+DNS污染经常导致github访问缓慢，可以通过配置hosts指定ip来提速。可以在http://blog.yoqi.me/lyq/16489.html 获取最新的hosts列表,腾讯云的hosts配完有点用，本地windows10 配完反而不能访问了
 >vi /etc/hosts   
 
 命令行执行下面命令刷新 dns，或者重启电脑。  
