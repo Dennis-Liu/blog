@@ -9,6 +9,7 @@
 ** [linux常用命令](memo/linux)
 ** [Docker](memo/docker)
 ** [Css](memo/css)
+** [jQuery](memo/jquery)
 ** [W3M](memo/w3m)
 ** [Screen](memo/screen)
 ** [Git](memo/git)
