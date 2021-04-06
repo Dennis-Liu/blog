@@ -150,41 +150,44 @@ public String getByMacAddress(@PathVariable String macAddress){
 
 #### @Column
 
-##### 1.当实体的属性与其映射的数据库表的列不同名时需要使用@Column标注说明，该属性通常置于实体的属性声明语句之前，还可与 @Id 标注一起使用。  
+!> 1.当实体的属性与其映射的数据库表的列不同名时需要使用@Column标注说明，该属性通常置于实体的属性声明语句之前，还可与 @Id 标注一起使用。  
 
-##### 2.@Column 标注的常用属性是name，用于设置映射数据库表的列名。此外，该标注还包含其它多个属性，如：unique、nullable、length、precision等。具体如下：  
+!> 2.@Column 标注的常用属性是name，用于设置映射数据库表的列名。此外，该标注还包含其它多个属性，如：unique、nullable、length、precision等。
 
-  1 name属性：name属性定义了被标注字段在数据库表中所对应字段的名称  
+<details>
+<summary>具体展开</summary>  
 
-  2 unique属性：unique属性表示该字段是否为唯一标识，默认为false，如果表中有一个字段需要唯一标识，则既可以使用该标记，也可以使用@Table注解中的@UniqueConstraint  
+- name属性：name属性定义了被标注字段在数据库表中所对应字段的名称  
 
-  3 nullable属性：nullable属性表示该字段是否可以为null值，默认为true  
+- unique属性：unique属性表示该字段是否为唯一标识，默认为false，如果表中有一个字段需要唯一标识，则既可以使用该标记，也可以使用@Table注解中的@UniqueConstraint  
 
-  4 insertable属性：insertable属性表示在使用”INSERT”语句插入数据时，是否需要插入该字段的值  
+- nullable属性：nullable属性表示该字段是否可以为null值，默认为true  
+
+- insertable属性：insertable属性表示在使用”INSERT”语句插入数据时，是否需要插入该字段的值  
  
-  5 updateable属性：updateable属性表示在使用”UPDATE”语句插入数据时，是否需要更新该字段的值  
+- updateable属性：updateable属性表示在使用”UPDATE”语句插入数据时，是否需要更新该字段的值  
 
-  6 insertable和updateable属性：一般多用于只读的属性，例如主键和外键等，这些字段通常是自动生成的  
+- insertable和updateable属性：一般多用于只读的属性，例如主键和外键等，这些字段通常是自动生成的  
 
-  7 columnDefinition属性：columnDefinition属性表示创建表时，该字段创建的SQL语句，一般用于通过Entity生成表定义时使用，如果数据库中表已经建好，该属性没有必要使用  
+- columnDefinition属性：columnDefinition属性表示创建表时，该字段创建的SQL语句，一般用于通过Entity生成表定义时使用，如果数据库中表已经建好，该属性没有必要使用  
 
-  8 table属性：table属性定义了包含当前字段的表名  
+- table属性：table属性定义了包含当前字段的表名  
 
-  9 length属性：length属性表示字段的长度，当字段的类型为varchar时，该属性才有效，默认为255个字符  
+- length属性：length属性表示字段的长度，当字段的类型为varchar时，该属性才有效，默认为255个字符  
 
- 10 precision属性和scale属性：precision属性和scale属性一起表示精度，当字段类型为double时，precision表示数值的总长度，scale表示小数点所占的位数  
+- precision属性和scale属性：precision属性和scale属性一起表示精度，当字段类型为double时，precision表示数值的总长度，scale表示小数点所占的位数  
 
- 
+ </details>
 
-    具体如下：  
+具体如下：  
    1.double类型将在数据库中映射为double类型，precision和scale属性无效  
    2.double类型若在columnDefinition属性中指定数字类型为decimal并指定精度，则最终以columnDefinition为准  
    3.BigDecimal类型在数据库中映射为decimal类型，precision和scale属性有效  
    4.precision和scale属性只在BigDecimal类型中有效  
 
-##### 3.@Column 标注的columnDefinition属性: 表示该字段在数据库中的实际类型.通常 ORM 框架可以根据属性类型自动判断数据库中字段的类型,但是对于Date类型仍无法确定数据库中字段类型究竟是DATE,TIME还是TIMESTAMP.此外,String的默认映射类型为VARCHAR,如果要将 String 类型映射到特定数据库的 BLOB 或TEXT字段类型.
+!> 3.@Column 标注的columnDefinition属性: 表示该字段在数据库中的实际类型.通常 ORM 框架可以根据属性类型自动判断数据库中字段的类型,但是对于Date类型仍无法确定数据库中字段类型究竟是DATE,TIME还是TIMESTAMP.此外,String的默认映射类型为VARCHAR,如果要将 String 类型映射到特定数据库的 BLOB 或TEXT字段类型.
 
-##### 4.@Column标注也可置于属性的getter方法之前
+!> 4.@Column标注也可置于属性的getter方法之前
 
 #### @Getter和@Setter（Lombok）
 
@@ -225,21 +228,26 @@ public String getByMacAddress(@PathVariable String macAddress){
 
  
 
-#### 当你在执行各种持久化方法的时候，实体的状态会随之改变，状态的改变会引发不同的生命周期事件。这些事件可以使用不同的注释符来指示发生时的回调函数。  
+#### 当你在执行各种持久化方法的时候，实体的状态会随之改变，状态的改变会引发不同的生命周期事件。
 
-@javax.persistence.PostLoad：加载后。  
+<details>
+<summary>这些事件可以使用不同的注释符来指示发生时的回调函数。</summary>
 
-@javax.persistence.PrePersist：持久化前。  
+- @javax.persistence.PostLoad：加载后。  
 
-@javax.persistence.PostPersist：持久化后。  
+- @javax.persistence.PrePersist：持久化前。  
 
-@javax.persistence.PreUpdate：更新前。  
+- @javax.persistence.PostPersist：持久化后。  
 
-@javax.persistence.PostUpdate：更新后。  
+- @javax.persistence.PreUpdate：更新前。  
 
-@javax.persistence.PreRemove：删除前。  
+- @javax.persistence.PostUpdate：更新后。  
 
-@javax.persistence.PostRemove：删除后。  
+- @javax.persistence.PreRemove：删除前。  
+
+- @javax.persistence.PostRemove：删除后。 
+
+</details>
 
 #### 1）数据库查询
 
