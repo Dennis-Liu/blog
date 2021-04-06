@@ -1,6 +1,6 @@
 <!-- test/_sidebar.md -->
 
-* 笔记
+* [笔记](note/)
 ** [kiwi_tcms](note/kiwi_tcms)
 ** [vscode remote ssh免密](note/remote_ssh)
 ** [nginx](note/nginx)
