@@ -15,6 +15,7 @@
 ** [W3M](memo/w3m)
 ** [Screen](memo/screen)
 ** [Git](memo/git)
+** [Redis](memo/redis)
 * 练习
 ** [python](practic/python)
 ** [fastapi](practic/fastapi)
