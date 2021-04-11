@@ -22,6 +22,6 @@
 ** [python cheat sheet](practic/python-cheat-sheet)
 ** [jQuery](practic/jQuery)
 * SpringBoot
-** [annotation](SpringBoot/annotation)
+** [JPA](SpringBoot/JPA)
 * VUE
 ** [vuex](VUE/vuex)
