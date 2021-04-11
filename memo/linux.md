@@ -80,3 +80,14 @@ Go to your home directory with cd. Access files relative to your home directory 
 If you are halfway through typing a command but change your mind, hit alt-# to add a # at the beginning and enter it as a comment (or use ctrl-a, #, enter). You can then return to it later via command history.
 
 pstree -p is a helpful display of the process tree.
+
+
+### 升级node版本
+#### 清除缓存信息
+>sudo npm cache clean -f
+#### 下载node安装包
+>sudo npm install -g n
+#### 升级到nodejs最新稳定版本
+>sudo n stable
+#### 查看当前版本
+>node -v
