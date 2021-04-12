@@ -5,7 +5,6 @@
 ** [vscode remote ssh免密](note/remote_ssh)
 ** [nginx](note/nginx)
 ** [win10](note/win10)
-** [SpringBoot](note/SpringBoot/)
 * 备忘
 ** [ES6](memo/es6)
 ** [linux常用命令](memo/linux)
@@ -23,5 +22,6 @@
 ** [jQuery](practic/jQuery)
 * SpringBoot
 ** [JPA](SpringBoot/JPA)
+** [Annotation](SpringBoot/Annotation)
 * VUE
 ** [vuex](VUE/vuex)
