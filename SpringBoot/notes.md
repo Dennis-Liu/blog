@@ -45,7 +45,7 @@ Spring Boot访问数据库有多种方式，包括jdbcTemplate，jpa，mybatis�
 
 Spring中的事务使用AOP实现的。流程如下：
 
-
+![4](img/4.png)
 
 业务逻辑是执行SQL，按AOP编写流程，可以把执行SQL之外的步骤抽取出来单独实现，这就是spring的数据库事务编程思想。 使用@Transactional在类或者方法中进行事务标注，在类上标注，则所有public非静态的方法都启动事务。
 
@@ -74,7 +74,7 @@ redis是基于内存的数据库，速度快，是关系数据库的几到几十
 
 （1）Redis事务：
 
-
+![5](img/5.png)
 
 （2）流水线：默认情况下，Redis客户端是一条条命令发送给Redis服务器，这样性能不高，使用流水线技术，就是把命令批量一次性发送执行。 （3）发布订阅：消息的常用模式，Redis提供一个渠道，让消息能够发送到这个渠道，而多个系统可以监听这个渠道，当消息发送到渠道，渠道会通知它的监听者。 （4）Lua：为了增强Redis的计算能力，从2.6开始提供了Lua支持，且它是具备原子性，保证一致性。比redis自身的事务要好。两种运行Lua的方法，一是直接发送Lua到Redis服务器，另一种是先把Lua发送到Redis，Redis对Lua脚本进行缓存，并返回SHA1的32位编码回来，之后只需要发送SHA1和相关参数给Redis即可。使用DefaultRedisScript。
 
@@ -88,7 +88,7 @@ Spring MVC是这本书的重点，从它的运行流程到原理，把参数处�
 
 ##### Spring MVC运行流程
 
-
+![6](img/6.png)
 ##### HandlerMapping
 spring mvc 启动阶段就会将@RequestMapping所配置的内容保存到处理器映射（HandlerMapping）中去，然后等待请求，通过拦截请求信息和HandlerMapping进行匹配，找到对应的处理器（它包含控制器controller逻辑），并将处理器及拦截器保存到HandlerExecutionChain对象中，返回给DispatcherServlet，这样就可以运行它们了。
 
@@ -107,7 +107,7 @@ spring mvc 启动阶段就会将@RequestMapping所配置的内容保存到处理
 
 （7）自定义参数转换，参数使用@RequestBody，处理器会采用请求体的内容进行转换。一对一转换，实现Converter。日期及货币使用Formatter，GenericConverter集合和数组转换，spring mvc已提供StringToCollectionConverter进行转换，转为List。 
 
-
+![7](img/7.png)
 
 ##### 参数验证
 （1）JSR-303验证，通过注解方式进行验证。需在POJO属性中加入相关注解，在Controller中使用@Valid表示启动验证机制。
