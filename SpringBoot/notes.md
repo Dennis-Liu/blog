@@ -5,7 +5,7 @@
 
 #### 内容提纲
 对于Spring的web开发，围绕的开发内容基本是属于Spring MVC，数据库访问，缓存处理，安全，分布式应用几个范畴，因此，书的大体结构也是分这几大部分，如下：
-
+![](img/1.png)
 全书从Spring Boot的出现开始讲起，到基本的环境搭建，进而对Spring的IOC及AOP进行详细讲解。以此作为理论基础，接着进行数据库访问、Redis集成、MongoDB集成的开发，然后重点讲解了Spring MVC的开发。后面对Spring Security、REST风格、WebFlux、部署及监控，Spring Cloud进行了初步的介绍和使用。
 
 下面对我读完后个人认为挺重要的内容做了个粗略的记录，也提醒自己在使用Spring Boot的过程中注意一下。
@@ -26,11 +26,11 @@ Spring IOC容器，具备两个基本功能 （1）bean的装配：通过描述�
 
 ##### Bean 生命周期
 
-
+![](img/2.png)
 
 ##### Bean 的初始化
 
-
+![](img/3.png)
 
 ##### AOP：面向切面编程
 
