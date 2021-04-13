@@ -23,5 +23,6 @@
 * SpringBoot
 ** [JPA](SpringBoot/JPA)
 ** [Annotation](SpringBoot/Annotation)
+** [notes](SpringBoot/notes)
 * VUE
 ** [vuex](VUE/vuex)
