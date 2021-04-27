@@ -97,5 +97,34 @@ server {
 }
 ```
 
+### HTTP 自动跳转 HTTPS 的安全配置
+```conf
+server {
+    listen 443 ssl;
+    #填写绑定证书的域名
+    server_name cloud.tencent.com; 
+    #证书文件名称
+    ssl_certificate  1_cloud.tencent.com_bundle.crt; 
+    #私钥文件名称
+    ssl_certificate_key 2_cloud.tencent.com.key; 
+    ssl_session_timeout 5m;
+    ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+    ssl_prefer_server_ciphers on;
+    location / {
+        #网站主页路径。此路径仅供参考，具体请您按照实际目录操作。  
+        root html;
+        index index.html index.htm;
+    }
+}
+server {
+    listen 80;
+    #填写绑定证书的域名
+    server_name cloud.tencent.com; 
+    #把http的域名请求转成https
+    return 301 https://$host$request_uri; 
+}
+```
+
 ### 然后执行reload
 >nginx -s reload  
