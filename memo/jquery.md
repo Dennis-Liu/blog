@@ -15,11 +15,11 @@
 >$('#position').select2().val($('#position').find('option:contains("CMS")').val()).trigger('change');
 
 ## 模糊定位
-^ 匹配开头
+>^ 匹配开头
 ```javascript
 div[class^='col']
 div[id^='col\\]']
 ```
 
-$ 匹配结尾
-* 匹配包含
+>$ 匹配结尾
+>* 匹配包含
