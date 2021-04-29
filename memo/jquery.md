@@ -13,3 +13,13 @@
 
 ## JS控制select2选定某个值
 >$('#position').select2().val($('#position').find('option:contains("CMS")').val()).trigger('change');
+
+## 模糊定位
+^ 匹配开头
+```javascript
+div[class^='col']
+div[id^='col\\]']
+```
+
+$ 匹配结尾
+* 匹配包含
