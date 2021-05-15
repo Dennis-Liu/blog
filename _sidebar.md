@@ -15,6 +15,7 @@
 ** [Screen](memo/screen)
 ** [Git](memo/git)
 ** [Redis](memo/redis)
+** [RabbitMq](memo/rabbitmq)
 * 练习
 ** [python](practic/python)
 ** [fastapi](practic/fastapi)
