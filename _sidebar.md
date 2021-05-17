@@ -21,6 +21,7 @@
 ** [fastapi](practic/fastapi)
 ** [python cheat sheet](practic/python-cheat-sheet)
 ** [jQuery](practic/jQuery)
+** [AOD](practic/AOD)
 * SpringBoot
 ** [JPA](SpringBoot/JPA)
 ** [Annotation](SpringBoot/Annotation)
