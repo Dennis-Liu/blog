@@ -19,6 +19,9 @@
 删除当前文件夹下所有png格式的文件(rm -rf /*会删除整个根目录，且不可逆)
 >rm -rf *.png
 
+删除子文件下的所有png格式的文件  
+>find /var/autotest/var/lib/jenkins/workspace/audev2_selenium_test/behat/FailedStepScreenshot -name "*.png" | xargs rm -rf
+
 当删除文件太多或目录太多时会报错 -bash: /usr/bin/rm: Argument list too long,解决办法:
 >rm -rf */*.xml  
 
@@ -91,3 +94,6 @@ pstree -p is a helpful display of the process tree.
 >sudo n stable
 #### 查看当前版本
 >node -v
+
+just record:
+/audev2_selenium_test/uaedev2_selenium_test/hkdev2_selenium_test/krdev2_selenium_test/cndev2_selenium_test/indiadev2_selenium_test/frdev2_selenium_test/padev2_selenium_test/usdev2_selenium_test/cnrc_selenium_test/frrc_selenium_test/usrc_selenium_test/dev2_selenium_hook_before/dev2_selenium_hook_before2/dev2_selenium_hook_before3/dev2_selenium_debug/HKdev2_Firefox66_test/czopt_selenium_test/hropt_selenium_test/huopt_selenium_test/plopt_selenium_test/tropt_selenium_test/Code_Restore_Drill_Test_fr/Code_Restore_Drill_Test_India/Code_Restore_Drill_Test_Jordan/Code_Restore_Drill_Test_pa/Code_Restore_Drill_Test_us/
