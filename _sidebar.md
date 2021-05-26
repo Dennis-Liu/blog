@@ -6,6 +6,7 @@
 ** [nginx](note/nginx)
 ** [win10](note/win10)
 ** [java8](note/java8)
+** [idea](note/idea)
 * 备忘
 ** [ES6](memo/es6)
 ** [linux常用命令](memo/linux)
