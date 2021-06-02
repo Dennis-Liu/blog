@@ -39,3 +39,7 @@ def capitalize_every_word(string):
 ```python
 capitalize_every_word('hello world!') # 'Hello World!'
 ```
+
+### os.sep
+
+当前系统文件的路径分隔符(windows '\', linux '/')
