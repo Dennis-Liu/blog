@@ -18,6 +18,7 @@
 ** [Git](memo/git)
 ** [Redis](memo/redis)
 ** [RabbitMq](memo/rabbitmq)
+** [samba](memo/samba)
 * 练习
 ** [python](practic/python)
 ** [fastapi](practic/fastapi)
