@@ -24,5 +24,6 @@
 >testparm  
 #### 启动samba服务
 >/etc/init.d/smb start  
+
 如果没有错误，则在你的windows机器上的浏览器中输入 file://IP/share 看是否能访问
 
