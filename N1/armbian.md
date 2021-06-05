@@ -1,3 +1,4 @@
+### 系统如何设置固定ip
 By default your main network adapter's IP is assigned by your router DHCP server.
 
 Edit /etc/network/interfaces and change from:
