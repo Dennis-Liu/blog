@@ -31,3 +31,5 @@
 ** [notes](SpringBoot/notes)
 * VUE
 ** [vuex](VUE/vuex)
+* N1
+** [armbian.md](N1/armbian.md)
