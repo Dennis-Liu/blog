@@ -4,6 +4,8 @@
 软链接
 >ln -s /var/autotest/var/lib/jenkins/workspace/us_only_dev2_selenium_test/ us_only  
 
+远程文件、目录的同步
+>sudo rsync -avz xxx root@192.168.11.1:/opt/yyy
 
 权限
 >setfacl -R -m u:jenkins:rwx /opt  
