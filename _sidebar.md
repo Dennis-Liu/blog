@@ -32,4 +32,5 @@
 * VUE
 ** [vuex](VUE/vuex)
 * N1
-** [armbian.md](N1/armbian.md)
+** [armbian](N1/armbian.md)
+** [onmp_mysql](N1/onmp_mysql.md)
