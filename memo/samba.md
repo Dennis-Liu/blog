@@ -8,10 +8,10 @@
 把
 >security = user  
 修改为 
->security = share  
+>security = user  
 >map to guest =Bad User
 
-#### 然后在文件的最末尾处加入以下内容
+#### 然后在文件/etc/samba/smb.conf的最末尾处加入以下内容
 ```conf
 [share]
     comment = share all
