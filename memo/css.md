@@ -29,3 +29,17 @@
   }
 }
 ```
+
+### css隐藏元素方式
+>display:none; 隐藏元素，不占位置  
+>visibility:hidden；隐藏元素，占位置
+
+### css透明度属性
+>opacity:用于设置透明度
+*	取值范围0-1
+*	值越小，越透明
+	
+#### 为了兼容低版本ie，需要添加如下代码
+>opacity:0.5;  
+>filter:alpha(opacity=50);(取值范围：0-100)
+
