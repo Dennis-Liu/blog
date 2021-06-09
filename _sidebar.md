@@ -32,7 +32,7 @@
 * VUE
 ** [vuex](VUE/vuex)
 * Mysql
-** [mysql](mysql/permission)
+** [mysql](Mysql/permission)
 * N1
 ** [armbian](N1/armbian.md)
 ** [onmp_mysql](N1/onmp_mysql.md)
