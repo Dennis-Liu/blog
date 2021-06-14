@@ -37,3 +37,4 @@
 ** [armbian](N1/armbian.md)
 ** [onmp_mysql](N1/onmp_mysql)
 ** [ttyd](N1/ttyd)
+** [prit](N1/prit)
