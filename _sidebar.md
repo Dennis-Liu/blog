@@ -7,6 +7,7 @@
 ** [win10](note/win10)
 ** [java8](note/java8)
 ** [idea](note/idea)
+** [sonar](note/sonar)
 * 备忘
 ** [ES6](memo/es6)
 ** [postgres](memo/postgres)
