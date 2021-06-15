@@ -47,3 +47,6 @@
 
 路径映射
 >docker run -p 80:80 -v /data:/data -d nginx:latest
+
+创建容器时忘了添加参数
+>docker update --restart=always 容器名字/ID  
