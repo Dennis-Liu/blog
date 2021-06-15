@@ -45,3 +45,5 @@
 重启容器
 >docker restart kiwi_web
 
+路径映射
+>docker run -p 80:80 -v /data:/data -d nginx:latest
