@@ -9,6 +9,7 @@
 ** [idea](note/idea)
 * 备忘
 ** [ES6](memo/es6)
+** [postgres](memo/postgres)
 ** [linux常用命令](memo/linux)
 ** [Docker](memo/docker)
 ** [Css](memo/css)
