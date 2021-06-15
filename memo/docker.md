@@ -45,7 +45,7 @@
 重启容器
 >docker restart kiwi_web
 
-路径映射
+Docker的数据持久化即使数据不随着container的结束而结束，数据存在于host机器上——要么存在于host的某个指定目录中（使用bind mount），要么使用docker自己管理的volume（/var/lib/docker/volumes下）
 >docker run -p 80:80 -v /data:/data -d nginx:latest
 
 创建容器时忘了添加参数
