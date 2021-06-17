@@ -7,6 +7,10 @@
 
 删除镜像
 >docker rmi hello-world
+
+保存镜像
+>docker save ID > xxx.tar  
+>docker load < xxx.tar  
 -------------
 
 启动容器
@@ -26,6 +30,14 @@
 
 查看容器
 >docker ps
+
+保存容器
+>docker export ID >xxx.tar  
+>docker import xxx.tar containr:v1  
+
+然后再  
+>docker run -it containr:v1 bash
+-------------
 
 网络端口的快捷方式
 >docker port wizardly_chandrasekhar 
