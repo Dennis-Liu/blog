@@ -31,6 +31,12 @@
 查看容器
 >docker ps
 
+停止容器
+>docker stop kiwi_web
+
+重启容器
+>docker restart kiwi_web
+
 保存容器
 >docker export ID >xxx.tar  
 >docker import xxx.tar containr:v1  
@@ -50,12 +56,6 @@
 
 查看 Docker 的底层信息
 >docker inspect
-
-停止容器
->docker stop kiwi_web
-
-重启容器
->docker restart kiwi_web
 
 Docker的数据持久化即使数据不随着container的结束而结束，数据存在于host机器上——要么存在于host的某个指定目录中（使用bind mount），要么使用docker自己管理的volume（/var/lib/docker/volumes下）
 >docker run -p 80:80 -v /data:/data -d nginx:latest
