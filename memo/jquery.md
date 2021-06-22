@@ -61,5 +61,6 @@ $("li:first") === $('li').first()//只选中第一组第一个
 $("li:first-child") 每一组的一个li
 ```
 
-
+## filter()
+>$('a').filter(':visible').filter(":contains('xxx')")[0].click();  
 
