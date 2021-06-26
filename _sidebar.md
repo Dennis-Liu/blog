@@ -8,6 +8,7 @@
 ** [java8](note/java8)
 ** [idea](note/idea)
 ** [sonar](note/sonar)
+** [sonar](note/杂七杂八)
 * 备忘
 ** [ES6](memo/es6)
 ** [postgres](memo/postgres)
