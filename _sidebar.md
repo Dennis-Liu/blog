@@ -12,7 +12,6 @@
 * 备忘
 ** [ES6](memo/es6)
 ** [postgres](memo/postgres)
-** [linux常用命令](memo/linux)
 ** [Docker](memo/docker)
 ** [Css](memo/css)
 ** [jQuery](memo/jquery)
@@ -36,8 +35,11 @@
 ** [vuex](VUE/vuex)
 * Mysql
 ** [permission](mysql/permission)
+* Linux
+** [linux常用命令](linux/linux)
+** [python](linux/python)
 * N1
-** [armbian](N1/armbian.md)
+** [armbian](N1/armbian)
 ** [onmp_mysql](N1/onmp_mysql)
 ** [ttyd](N1/ttyd)
 ** [prit](N1/prit)
