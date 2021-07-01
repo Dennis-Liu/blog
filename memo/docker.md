@@ -31,13 +31,16 @@
 查看容器
 >docker ps
 
+看完整的command
+>docker ps  --no-trunc
+
 停止容器
 >docker stop kiwi_web
 
 重启容器
 >docker restart kiwi_web
 
-保存容器
+保存容器(使用export 导出的是容器，不是镜像,运行导入的镜像必须带command，否则启动会报错：Error response from daemon: No command specified)
 >docker export ID >xxx.tar  
 >docker import xxx.tar containr:v1  
 
