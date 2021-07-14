@@ -13,6 +13,7 @@
 ** [ES6](memo/es6)
 ** [postgres](memo/postgres)
 ** [Docker](memo/docker)
+** [K8S](memo/k8s)
 ** [Css](memo/css)
 ** [jQuery](memo/jquery)
 ** [W3M](memo/w3m)
