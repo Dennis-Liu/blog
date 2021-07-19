@@ -1,5 +1,8 @@
-### 查看pod
+### 查看所有pod
 >sudo kubectl get pod -n autotest -o wide  
+
+### 查看pod详细情况
+>sudo kubectl describe pod kiwitcms-84cd884b85-n6wvm -n support
 
 ### 启动
 >sudo kubectl apply -f testsupport.yml
@@ -14,7 +17,7 @@
 >sudo kubectl exec -it kiwitcms-xxx-yyy [--container aaa] bash -n support
 
 ### 重启yml
->kubectl replace --force -f youpod.yaml
+>sudo kubectl replace --force -f youpod.yaml
 
 ### 如果你手头没有 yaml 文件，直接使用的 Pod 对象，我们可以稍微调整一下上面的命令，如下：
->kubectl get pod {podname} -n {namespace} -o yaml | kubectl replace --force -f -
+>sudo kubectl get pod {podname} -n {namespace} -o yaml | kubectl replace --force -f -
