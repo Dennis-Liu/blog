@@ -21,3 +21,10 @@
 
 ### 如果你手头没有 yaml 文件，直接使用的 Pod 对象，我们可以稍微调整一下上面的命令，如下：
 >sudo kubectl get pod {podname} -n {namespace} -o yaml | kubectl replace --force -f -
+
+### 单文件映射（不会是文件夹内的其他文件消失）
+```yaml
+- name: kiwitcms-bugs-custom
+    mountPath: /venv/lib64/python3.8/site-packages/tcms/bugs/api.py
+    subPath: api.py
+```
