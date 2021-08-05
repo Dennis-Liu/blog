@@ -33,6 +33,9 @@
 查找大文件
 >find -type f -size +100M  -print0 | xargs -0 du -h
 
+列出当前文件下各个文件夹的大小
+>sudo du --max-depth=1 -h  
+
 查看端口占用
 >netstat -an | grep 7055
 
