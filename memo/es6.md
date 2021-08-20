@@ -60,3 +60,17 @@ function bar() {
 }
 //输出结果1
 ```
+
+## filter
+```js
+<script>
+    var arr=[50,86,12,10,0,38,12];
+    var arr1=[];
+    arr1=  arr.filter(function(value){
+        return value>10;
+    })
+    console.log(arr1);
+
+</script>
+```  
+>输出[50,86,12,38,12]  
