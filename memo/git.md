@@ -28,19 +28,19 @@ DNS污染经常导致github访问缓慢，可以通过配置hosts指定ip来提�
 >ipconfig /flushdns 
 
 
-##svn迁移到git仓库并保留commit历史记录
+## svn迁移到git仓库并保留commit历史记录
 
-### 环境准备
+#### 环境准备
 >sudo apt-get install git-svn
 
-### 创建用户映射
+#### 创建用户映射
 >svn log ^/ --xml | grep -P "^<author" | sort -u | perl -pe 's/<author>(.*?)<\/author>/$1 = /' > users.txt
 
-### git svn clone
+#### git svn clone
 >git svn clone svn://ip端口/projectname --no-metadata --authors-file=users.txt projectname
   
-### 添加远程git仓库
+#### 添加远程git仓库
 >git remote add origin git@gitlab.com:<group>/<projectname>.git
   
-### 提交代码到git仓库
+#### 提交代码到git仓库
 >git push -u origin master
