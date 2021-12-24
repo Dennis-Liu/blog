@@ -92,7 +92,7 @@ x = mycol.find_one()
 print(json_util.dumps(x,indent=2))
 ```
 
-#### 带条件查找
+#### 带条件查找结果总数
 ```python
 mycol.count_documents({'timestamp': {'$gt': '2021-11-11 10:00:00'},'$or':[{'level':'ERROR'},{'level':'FATAL'}]})
 ```
