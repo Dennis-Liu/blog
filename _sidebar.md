@@ -22,6 +22,7 @@
 ** [Redis](memo/redis)
 ** [RabbitMq](memo/rabbitmq)
 ** [samba](memo/samba)
+** [mongodb](memo/mongodb)
 * 练习
 ** [python](practic/python)
 ** [fastapi](practic/fastapi)
