@@ -7,7 +7,7 @@ https:xxx.jenkins.com/restart
 
 ### groovy脚本批量创建用户
 ```groovy
-def userArr = ["test":"test@test.com"
+def userArr = ["test2":"test@test.com"
 ,"Zhangsan":"Zhangsan@test.com"
 ,"Lisi":"Lisi@test.com"];
 for(i in userArr){
