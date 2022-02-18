@@ -64,7 +64,14 @@
 >ps -ef | grep firefox | wc -l
 
 测试端口通不通
->telnet 1.2.3.4 3306  
+>telnet 1.2.3.4 3306   
+
+别名
+>alias foo='cd /usr; ls; cd -'    
+
+删除别名
+>unalias foo    
+
 
 刷票
 ```shell
