@@ -40,6 +40,12 @@ def capitalize_every_word(string):
 capitalize_every_word('hello world!') # 'Hello World!'
 ```
 
+### import parent folder library
+```python
+sys.path.append('../')
+```
+
+
 ### os.sep
 
 当前系统文件的路径分隔符(windows '\', linux '/')
