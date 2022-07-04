@@ -71,7 +71,6 @@ sys.path.append('../')
 ```python
 from functools import wraps
 from datetime import datetime
-
 def logs(func):
     @wraps(func) #把原函数所有必要的属性复制到新函数上，与原来简单的装饰器相比不只是增加了新功能，还保留原函数的属性
     def wrapper(*args,**kwargs):
@@ -82,16 +81,12 @@ def logs(func):
         func(*args,**kwargs)
         print(datetime.now())
     return wrapper
-
-
 @logs
 def anything(x,*args,**kwargs):#可变参数，顺序不可变
     """function comments"""
     print(x)
     print(args[0])
     print(kwargs['a'])
-
-
 if __name__ == '__main__': #单独执行当前文件属性__name__的值是'__main__',别其他文件调用时属性__name__的值是文件名
     anything(1,2,a="3")
     print("function name is {}".format(anything.__name__))
