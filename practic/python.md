@@ -97,6 +97,7 @@ if __name__ == '__main__': #单独执行当前文件属性__name__的值是'__ma
     print("function name is {}".format(anything.__name__))
     print("function doc is {}".format(anything.__doc__))
 ```
+
 ```Terminal
 [dhc.dennisliu@k8snode3 Einvoice]$ python3 test_decorator.py
 running function:  anything
