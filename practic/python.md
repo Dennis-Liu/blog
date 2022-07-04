@@ -62,12 +62,12 @@ sys.path.append('../')
 
 
 ### Decorator & Parameter
-##### *装饰器用法，好处*
-##### 简化代码，避免重复性代码
-##### 打印日志 @log
-##### 检测性能 @performance
-##### 数据库事务 @transaction
-##### URL路由 @post('/register')
+* *装饰器用法，好处*
+* 简化代码，避免重复性代码
+* 打印日志 @log
+* 检测性能 @performance
+* 数据库事务 @transaction
+* URL路由 @post('/register')
 ```python
 from functools import wraps
 from datetime import datetime
