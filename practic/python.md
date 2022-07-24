@@ -105,3 +105,7 @@ paramenter2  {'a': '3'}
 function name is anything
 function doc is function comments
 ```
+
+### pip下载超时  
+>pip install --upgrade --default-timeout=1000 fastapi
+
