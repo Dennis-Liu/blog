@@ -109,3 +109,16 @@ function doc is function comments
 ### pip下载超时  
 >pip3 install --upgrade --default-timeout=1000 fastapi
 
+### pip换源  
+####一次使用：   
+>pip install you_package_name -i https://pypi.tuna.tsinghua.edu.cn/simple(清华源)   
+
+####一劳永逸：  
+>pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple(清华源)    
+
+### 下载wheel后手动安装  
+```python
+cd you_install_path  #安装路径
+pip3 install you—_path_wheel.whl  # wheel路径 
+```
+
