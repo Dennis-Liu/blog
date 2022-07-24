@@ -107,5 +107,5 @@ function doc is function comments
 ```
 
 ### pip下载超时  
->pip install --upgrade --default-timeout=1000 fastapi
+>pip3 install --upgrade --default-timeout=1000 fastapi
 
