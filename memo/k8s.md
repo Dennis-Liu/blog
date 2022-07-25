@@ -11,7 +11,7 @@
 >sudo kubectl delete pod testsupport-xxx-yyy -n support
 
 ### 查看log
->sudo kubectl logs -f --tail=10 selenium-node-c7zcq [container] -n autotest
+>sudo kubectl logs -f --tail=10 selenium-node-c7zcq [container] -n autotest  
 >sudo kubectl logs --since=9h selenium-hub-76db798c6b-w4pkb -n autotest > /tmp/dennis/selenium-hub.log
 
 ### 进入容器
