@@ -27,6 +27,13 @@ DNS污染经常导致github访问缓慢，可以通过配置hosts指定ip来提�
 命令行执行下面命令刷新 dns，或者重启电脑。  
 >ipconfig /flushdns 
 
+## remote: HTTP Basic: Access denied的解决方法
+
+>git config --system --unset credential.helper  
+再次进行 Git 操作，输入正确的用户名，密码即可
+
+>git config http.emptyAuth true  
+再次进行 Git 操作，输入正确的用户名，密码即可。
 
 ## svn迁移到git仓库并保留commit历史记录
 
