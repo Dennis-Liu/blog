@@ -3,6 +3,7 @@
 * [笔记](note/)
 ** [kiwi_tcms](note/kiwi_tcms)
 ** [vscode remote ssh免密](note/remote_ssh)
+** [vscode shortcut](note/shortcut)
 ** [nginx](note/nginx)
 ** [win10](note/win10)
 ** [java8](note/java8)
